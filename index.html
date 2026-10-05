@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fathonah × Baladah | Kelompok 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<div id="tools"><button id="tN" aria-expanded="false">Catatan (N)</button><button id="tT" aria-label="Ganti tema">Tema</button></div>
+<nav id="dots" aria-label="Navigasi bagian"></nav>
+<aside id="notes" aria-live="polite"></aside>
+
+<main>
+<section id="hero" data-t="Pembuka">
+  <img class="moon" src="assets/bulan.webp" alt="">
+  <img class="lan" style="left:12%" src="assets/lentera.webp" alt="">
+  <img class="lan" style="right:14%;animation-delay:-2s" src="assets/lentera.webp" alt="">
+  <div class="wrap">
+    <div>
+      <h1><span>Fathonah</span> <span>×</span> <span>Baladah</span></h1>
+      <p class="sub">Cerdas dan Bodoh dalam Pengelolaan Data</p>
+      <div class="pills">
+        <button class="chip" style="background:#b88a1f" data-go="1">Fathonah · Cerdas</button>
+        <button class="chip" style="background:var(--red)" data-go="2">Baladah · Bodoh</button>
+      </div>
+      <ol>
+        <li>Putra Izhar Gumilar (039)</li><li>Reyhan Adrea Pratama (044)</li><li>Rafa Dzakwan Raihan Arifin (035)</li><li>Bilqis Anjaly Rohma (018)</li>
+        <li>Ria Ajeng Ayu Fatimah (034)</li><li>Salwa Aulia Khoirunisa (055)</li><li>Nicken Ayunda Ningrum (041)</li><li>Cindy Rahmawati Achmad (038)</li>
+      </ol>
+      <p style="font-size:.8rem;opacity:.7;margin-top:.8rem">Kelompok 4</p>
+    </div>
+    <img class="mosque" src="assets/masjid.webp" alt="Ilustrasi masjid">
+  </div>
+  <div class="hint">Scroll atau tekan → untuk mulai</div>
+</section>
+
+<section id="fathonah" data-t="Fathonah">
+  <div class="wrap">
+    <div>
+      <h2>Nilai Agama: Fathonah (Cerdas)</h2>
+      <p class="lead">Bijak mengambil keputusan dan kesimpulan. Mengolah data mentah menjadi data bermanfaat untuk kemaslahatan bersama.</p>
+      <div class="stat">1854</div>
+      <p style="margin:.2rem 0 .6rem;color:var(--mut)">Wabah kolera di Soho, London</p>
+      <p><b>Dr. John Snow</b> memetakan lokasi korban. Polanya menunjuk ke satu pompa air di Broad Street, dan data itu menjadi dasar keputusan kesehatan masyarakat.</p>
+    </div>
+    <div>
+      <div class="map">
+        <svg viewBox="0 0 400 300" id="svg" role="img" aria-label="Peta ilustrasi titik korban kolera"></svg>
+      </div>
+      <div class="row"><button class="btn" id="plot">Petakan korban</button><span id="cnt" style="font-weight:700">0 titik</span></div>
+      <p class="ins" id="ins">Tekan tombol, lalu lihat ke mana polanya mengarah. (Ilustrasi, bukan data asli.)</p>
+    </div>
+  </div>
+</section>
+
+<section id="baladah" data-t="Baladah">
+  <div class="wrap">
+    <div>
+      <h2>Pelanggaran Etika: Baladah (Bodoh)</h2>
+      <p class="lead">Tidak teliti dalam memilah data, dan memanipulasi data penelitian secara sengaja untuk kepentingan pribadi.</p>
+      <p><b>Reinhart &amp; Rogoff (Harvard)</b>, makalah 2010. Rumus Excel salah, data 5 negara tidak terhitung. Terungkap 2013 oleh Thomas Herndon, mahasiswa doktoral.</p>
+    </div>
+    <div class="card">
+      <small style="color:var(--mut)">Pertumbuhan negara berutang &gt;90% PDB</small>
+      <div class="big bad" id="big">−0,1%</div>
+      <div class="chips" id="chips"></div>
+      <code id="fx">=AVERAGE(15 negara)</code>
+      <div class="gauge"><b id="mk" style="left:25%"></b></div>
+      <button class="sw" id="sw" role="switch" aria-checked="false"><i></i><span id="swl">Masukkan 5 negara yang terlewat</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="dalil" data-t="Dalil">
+  <h2 style="text-align:center">Dalil: Teliti Sebelum Menyimpulkan</h2>
+  <p class="lead" style="margin:0 auto 1.6rem;text-align:center">Ketuk kartu untuk membuka artinya.</p>
+  <div class="flips">
+    <button class="fc"><div class="fi"><div><span class="ref">QS. Al-Hujurat [49]: 6</span><p class="ar">فَتَبَيَّنُوا أَنْ تُصِيبُوا قَوْمًا بِجَهَالَةٍ</p></div><div class="bk">“…maka telitilah kebenarannya agar kamu tidak mencelakakan suatu kaum karena kebodohan (kecerobohan)…”</div></div></button>
+    <button class="fc"><div class="fi"><div><span class="ref">QS. Al-Isra' [17]: 36</span><p class="ar">وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ</p></div><div class="bk">“Dan janganlah engkau mengikuti sesuatu yang engkau tidak mempunyai ilmu tentangnya.”</div></div></button>
+  </div>
+  <div class="note"><img src="assets/quran.webp" alt="" width="110"><span>Dalam dunia data: verifikasi sumber dan cek ulang hitungan.</span></div>
+</section>
+
+<section id="dampak" data-t="Dampak" data-m="good">
+  <div class="wrap">
+    <div>
+      <h2>Dampak Menerapkan dan Melanggar</h2>
+      <div class="seg" role="tablist"><button class="on" data-m="good" role="tab">Menerapkan Fathonah</button><button data-m="bad" role="tab">Melanggar (Baladah)</button></div>
+      <div id="list"></div>
+    </div>
+    <img class="ill" id="ill" src="assets/bulan.webp" alt="">
+  </div>
+</section>
+
+<section id="peduli" data-t="Kepedulian">
+  <div class="wrap">
+    <div>
+      <h2>Kepedulian Kita terhadap Pelanggaran</h2>
+      <p class="lead" style="margin-bottom:1rem">Tandai komitmen yang akan kita pegang sebagai mahasiswa sains data.</p>
+      <div id="cks"></div>
+    </div>
+    <div style="text-align:center">
+      <div class="q"><span class="ref" style="color:#6b5410">QS. Thaha [20]: 114</span><div class="ar">رَبِّ زِدْنِي عِلْمًا</div><div>“Ya Tuhanku, tambahkanlah ilmu kepadaku.”</div></div>
+      <img class="ill" id="kid" src="assets/anak-anak.webp" alt="" style="margin:0 auto">
+      <div class="prog"><i id="pg"></i></div>
+      <div class="msg" id="pm">0 dari 4 komitmen</div>
+    </div>
+  </div>
+</section>
+
+<section id="end" data-t="Penutup">
+  <img src="assets/lentera.webp" alt="" width="70" class="lan" style="position:static;margin-bottom:1rem">
+  <h2>Terima kasih</h2>
+  <p style="opacity:.85;max-width:44ch">Teliti dulu, baru menyimpulkan. Itulah Fathonah dalam mengelola data.</p>
+  <p style="opacity:.7">Wassalamu'alaikum warahmatullahi wabarakatuh · Kelompok 4</p>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
